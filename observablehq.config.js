@@ -20,7 +20,7 @@ export default {
   // Content to add to the head of the page, e.g. for a favicon:
   head: `<link rel="icon" href="observable.png" type="image/png" sizes="32x32">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-uj2P2BRlhRHt0cojKSRVqpbGN6F39TGsI+AX8CuaUtL6v6ldH8TZvVoNVVV6b3W4" crossorigin="anonymous">
-<link rel="stylesheet" href="custom-styles.css">`,
+<link rel="stylesheet" href="./data/custom-styles.css">`,
 
   // The path to the source root.
   root: "src",

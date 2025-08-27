@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "clean": "rimraf src/.observablehq/cache",
-    "build": "observable build",
+    "build": "observable build && cp src/*.pdf dist/ 2>/dev/null || true",
     "dev": "observable preview",
     "deploy": "observable deploy",
     "observable": "observable",
