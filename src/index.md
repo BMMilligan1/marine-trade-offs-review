@@ -1,5 +1,7 @@
 # Marine Governance Trade-offs: A Functional Analysis of Global Management Approaches
 
+![Marine Governance Cover](./data/cover-image.png)
+
 ## Author Information
 **Authors:** Phil James and Ben Milligan  
 **Affiliation:** UNSW Centre for Sustainable Development Reform  
