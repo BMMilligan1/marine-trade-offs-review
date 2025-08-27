@@ -4,7 +4,7 @@ import MarkdownItKatex from "markdown-it-katex";
 
 export default {
   // The app's title; used in the sidebar and webpage titles.
-  title: "Research Report Publishing Platform",
+  title: "Marine Governance Trade-offs",
   
   // Configure markdown-it plugins
   markdownIt: (md) => md.use(MarkdownItFootnote).use(MarkdownItKatex),
@@ -14,22 +14,7 @@ export default {
   // lets you organize them into sections and have unlisted pages.
   pages: [
     {name: "Home", path: "/"},
-    {
-      name: "Data Visualization",
-      pages: [
-        {name: "Statistical Analysis", path: "/statistical-analysis"},
-        {name: "Time Series", path: "/time-series"},
-        {name: "Geospatial Data", path: "/geospatial"},
-        {name: "Network Analysis", path: "/network-analysis"},
-      ]
-    },
-    {
-      name: "Reports & Tables",
-      pages: [
-        {name: "Data Tables", path: "/data-tables"},
-        {name: "Methods & References", path: "/methods"},
-      ]
-    }
+    {name: "Full Report", path: "/marine-trade-offs"}
   ],
 
   // Content to add to the head of the page, e.g. for a favicon:
@@ -42,7 +27,7 @@ export default {
   // Some additional configuration options and their defaults:
   // theme: "default", // try "light", "dark", "slate", etc.
   // header: "", // what to show in the header (HTML)
-  footer: `Built with Observable Framework on ${new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}.`,
+  footer: "",
   // sidebar: true, // whether to show the sidebar
   // toc: true, // whether to show the table of contents
   // pager: true, // whether to show previous & next links in the footer
