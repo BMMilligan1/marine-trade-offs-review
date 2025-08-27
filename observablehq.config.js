@@ -19,7 +19,8 @@ export default {
 
   // Content to add to the head of the page, e.g. for a favicon:
   head: `<link rel="icon" href="observable.png" type="image/png" sizes="32x32">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-uj2P2BRlhRHt0cojKSRVqpbGN6F39TGsI+AX8CuaUtL6v6ldH8TZvVoNVVV6b3W4" crossorigin="anonymous">`,
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-uj2P2BRlhRHt0cojKSRVqpbGN6F39TGsI+AX8CuaUtL6v6ldH8TZvVoNVVV6b3W4" crossorigin="anonymous">
+<link rel="stylesheet" href="custom-styles.css">`,
 
   // The path to the source root.
   root: "src",
@@ -27,7 +28,7 @@ export default {
   // Some additional configuration options and their defaults:
   // theme: "default", // try "light", "dark", "slate", etc.
   // header: "", // what to show in the header (HTML)
-  footer: "",
+  footer: '<a href="https://github.com/BMMilligan1/marine-trade-offs-review" style="text-decoration: none;">📂 View source on GitHub</a>',
   // sidebar: true, // whether to show the sidebar
   // toc: true, // whether to show the table of contents
   // pager: true, // whether to show previous & next links in the footer

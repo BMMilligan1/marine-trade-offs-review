@@ -1,0 +1,37 @@
+/* Custom heading spacing for better readability */
+/* Only affects HTML, not PDF export */
+
+/* Primary heading - larger spacing for major sections */
+.observablehq h1 {
+  margin-bottom: 1.5rem;
+}
+
+/* Secondary heading - substantial spacing for main sections */
+.observablehq h2 {
+  margin-bottom: 1.25rem;
+}
+
+/* Subsection headings - moderate spacing */
+.observablehq h3,
+.observablehq h4,
+.observablehq h5,
+.observablehq h6 {
+  margin-bottom: 1rem;
+}
+
+/* Preserve existing behavior: no top margin when paragraph follows heading */
+/* This prevents double spacing between heading and immediate content */
+.observablehq h2 + p,
+.observablehq h3 + p,
+.observablehq h4 + p,
+.observablehq h2 + table,
+.observablehq h3 + table,
+.observablehq h4 + table {
+  margin-top: 0;
+}
+
+/* Special case: when h2 immediately follows h1 (subtitle pattern) */
+/* Preserve the existing styling */
+.observablehq h1 + h2 {
+  margin-bottom: 1rem;
+}

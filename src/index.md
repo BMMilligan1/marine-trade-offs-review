@@ -15,7 +15,7 @@ The contemporary ocean faces escalating conflicts between conservation imperativ
 
 ## Access the Full Report
 
-[**Read the complete analysis →**](./marine-trade-offs)
+[**Read online →**](./marine-trade-offs) | [**Download PDF →**](./marine-trade-offs.pdf)
 
 ---
 
