@@ -723,21 +723,27 @@ pre {
 }
 
 /* Lists need special handling for proper bullet alignment */
+/* Only target top-level lists, not nested ones */
 body > ul, body > ol,
-main ul, main ol,
-#observablehq-main ul, #observablehq-main ol,
-.observablehq ul:not(.footnotes ol), .observablehq ol:not(.footnotes ol) {
+main > ul, main > ol,
+#observablehq-main > ul, #observablehq-main > ol,
+.observablehq > ul:not(.footnotes ol), .observablehq > ol:not(.footnotes ol),
+.observablehq > p + ul, .observablehq > p + ol,
+.observablehq > h1 + ul, .observablehq > h2 + ul, .observablehq > h3 + ul, .observablehq > h4 + ul,
+.observablehq > h1 + ol, .observablehq > h2 + ol, .observablehq > h3 + ol, .observablehq > h4 + ol {
   margin-bottom: 0.8rem !important;
   margin-left: 15% !important;
   padding-left: 2em !important;
   list-style-position: outside !important;
 }
 
-/* Nested lists - minimal indent for consistent progression */
-ul ul, ul ol, ol ul, ol ol,
-li > ul, li > ol {
+/* Nested lists - ensure they don't inherit the parent's large margin */
+li > ul, li > ol,
+ul ul, ul ol, ol ul, ol ol {
   margin-left: 0 !important;
-  padding-left: 0.8em !important;
+  margin-right: 0 !important;
+  padding-left: 1.2em !important;
+  list-style-position: outside !important;
 }
 
 /* List items */
